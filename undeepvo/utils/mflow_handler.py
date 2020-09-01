@@ -10,7 +10,7 @@ DEFAULT_HOST_URI = "file:/mlflow"
 DEFAULT_EXPERIMENT_NAME = "undeepvo"
 CREATE_DATABRICKS_CREDENTIALS = False
 
-os.environ["MLFLOW_S3_ENDPOINT_URL"] = ""file:/mlflow""
+os.environ["MLFLOW_S3_ENDPOINT_URL"] = "file:/mlflow"
 os.environ["AWS_ACCESS_KEY_ID"] = "123"
 os.environ["AWS_SECRET_ACCESS_KEY"] = "12345678"
 
