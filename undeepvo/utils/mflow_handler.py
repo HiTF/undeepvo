@@ -6,11 +6,11 @@ import mlflow.exceptions
 DEFAULT_USER_NAME = ""
 DEFAULT_PASSWORD = ""
 DEFAULT_DATABRICKS_HOST = ""
-DEFAULT_HOST_URI = "http://329801-ilinvalery.tmweb.ru:5001/"
+DEFAULT_HOST_URI = ""
 DEFAULT_EXPERIMENT_NAME = "undeepvo"
 CREATE_DATABRICKS_CREDENTIALS = False
 
-os.environ["MLFLOW_S3_ENDPOINT_URL"] = "http://329801-ilinvalery.tmweb.ru:9000"
+os.environ["MLFLOW_S3_ENDPOINT_URL"] = ""
 os.environ["AWS_ACCESS_KEY_ID"] = "123"
 os.environ["AWS_SECRET_ACCESS_KEY"] = "12345678"
 
