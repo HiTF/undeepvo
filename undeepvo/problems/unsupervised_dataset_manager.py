@@ -42,11 +42,11 @@ class UnsupervisedDatasetManager(DatasetManager):
         scale = 3.
         height = 128
         width = 384
-        origin_focal = 707.0912
-        original_cx = 601.8873
-        original_cy = 183.1104
-        original_height = 384
-        original_width = 1248
+        origin_focal = 487.109
+        original_cx = 320.788
+        original_cy = 245.845
+        original_height = 480
+        original_width = 640
         focal = origin_focal / scale
         original_delta_cx = original_cx - original_width / 2
         original_delta_cy = original_cy - original_height / 2
@@ -58,7 +58,7 @@ class UnsupervisedDatasetManager(DatasetManager):
         right_camera_matrix = np.array([[focal, 0., cx],
                                         [0., focal, cy],
                                         [0., 0., 1.]])
-        camera_baseline = 0.54
+        camera_baseline = 0.120006
         return CamerasCalibration(camera_baseline, left_camera_matrix, right_camera_matrix, device)
 
     def get_camera0_from_left_transformation(self, device="cuda:0"):
